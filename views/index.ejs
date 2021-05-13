@@ -1,0 +1,837 @@
+<%- include("header") -%>
+
+<!-- Modal -->
+
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+  <div class="modal-dialog modal-login">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Member Login</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form action="/login" method="post">
+          <div class="form-group">
+            <input type="text" class="form-control" name="username" placeholder="Email" required="required">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#">Forgot Password?</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="myrModal" class="modal fade">
+  <div class="modal-dialog modal-login">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Member register</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form action="/register" method="post">
+          <div class="form-group">
+            <input type="text" class="form-control" name="username" placeholder="Email" required="required">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
+
+    <h1 class="logo mr-auto"><a href="#">Groovin</a></h1>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo mr-auto"><img src="img/logo.png" alt="" class="img-fluid"></a>-->
+
+    <nav class="nav-menu d-none d-lg-block">
+      <ul>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#team">Team</a></li>
+        <!-- <li class="drop-down"><a href="">Drop Down</a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="drop-down"><a href="#">Deep Drop Down</a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li> -->
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+    </nav><!-- .nav-menu -->
+
+    <a href="#myModal" class="get-started-btn scrollto" data-toggle="modal">Login</a>
+    <a href="#myrModal" class="get-started-btn scrollto" data-toggle="modal">Register</a>
+
+  </div>
+</header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+  <div class="hero-container">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background: url(img/slide/slide-1.jpg);">
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <h2 class="animate__animated animate__fadeInDown">Grow Your Business</h2>
+              <p class="animate__animated animate__fadeInUp">To stand out in today's online ecosystem a company needs an awe-inspiring brand. Dream Theory adds the touch of creativity your brand needs to complement the growth of your company.</p>
+              <div>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Know More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background: url(img/slide/slide-2.jpg);">
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <h2 class="animate__animated animate__fadeInDown">When Passion meets creativity!</h2>
+              <p class="animate__animated animate__fadeInUp">Dream Theory designs user experiences that keep visitors on your website and keeps them coming back.</p>
+              <div>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Know More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background: url(img/slide/slide-3.jpg);">
+          <div class="carousel-background"><img src="img/slide/slide-3.jpg" alt=""></div>
+          <div class="carousel-container">
+            <div class="carousel-content">
+              <h2 class="animate__animated animate__fadeInDown">Digital Marketing That Drives Results.</h2>
+              <p class="animate__animated animate__fadeInUp">Propel your business to new heights with our award-winning digital marketing services and technology platform.</p>
+              <div>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Know More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+  </div>
+</section><!-- End Hero -->
+
+
+<main id="main">
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+
+      <div class="row no-gutters">
+        <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
+        <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
+          <div class="content d-flex flex-column justify-content-center">
+            <h3>About Us</h3>
+            <p>
+              Our digital marketing experts have put together thousands of successful digital marketing campaigns for businesses looking to increase leads, phone calls, transactions, and qualified website traffic. They’ll do the same for you.
+            </p>
+
+            <div class="row">
+              <div class="col-md-6 icon-box">
+                <i class="bx bx-shield"></i>
+                <h4>Proven performance</h4>
+                <p>Our team of over 300 experts is one of the largest performance digital marketing agencies in the world. We've partnered with the best including Google, Facebook, Bing, and others, to bring the latest and greatest marketing
+                  technology to our clients.</p>
+              </div>
+              <div class="col-md-6 icon-box">
+                <i class="bx bx-receipt"></i>
+                <h4>Transparent ROI Tracking</h4>
+                <p>No need to wade through complicated spreadsheets when evaluating your campaign. All clients have access to MarketingCloudFX, our best-in-class marketing software platform that tracks the smallest details of each campaign.</p>
+              </div>
+              <div class="col-md-6 icon-box">
+                <i class="bx bx-cube-alt"></i>
+                <h4>Unparalleled Track Record</h4>
+                <p>We have a 91% client retention rate and a client recommendation score that's 488% higher than the nationwide average. Our 550+ client testimonials, overflowing trophy case, and award-winning culture are the perfect recipe for a
+                  successful digital campaign.</p>
+              </div>
+              <div class="col-md-6 icon-box">
+                <i class="bx bx-images"></i>
+                <h4>Leading Digital Experts</h4>
+                <p>We've been designing and marketing websites since 1995. We keep tabs on the latest and greatest design trends but measure the success of any site launch by how well the new design impacts business goals. We've built over 1,300
+                  websites across all niches that drive growth.</p>
+              </div>
+            </div>
+          </div><!-- End .content-->
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+  <!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts">
+    <div class="container">
+
+      <div class="row no-gutters">
+
+        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+          <div class="count-box">
+            <i class="icofont-simple-smile"></i>
+            <span data-toggle="counter-up">232</span>
+            <p><strong>Happy Clients</strong></p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+          <div class="count-box">
+            <i class="icofont-document-folder"></i>
+            <span data-toggle="counter-up">521</span>
+            <p><strong>Projects</strong></p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+          <div class="count-box">
+            <i class="icofont-live-support"></i>
+            <span data-toggle="counter-up">1,463</span>
+            <p><strong>Hours Of Support</strong> </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+          <div class="count-box">
+            <i class="icofont-users-alt-5"></i>
+            <span data-toggle="counter-up">15</span>
+            <p><strong>Hard Workers</strong> </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Counts Section -->
+
+  <!-- ======= Clients Section ======= -->
+  <section id="clients" class="clients section-bg">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="img/clients/client-1.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="img/clients/client-2.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="img/clients/client-3.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="img/clients/client-4.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="img/clients/client-5.png" class="img-fluid" alt="">
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+          <img src="img/clients/client-6.png" class="img-fluid" alt="">
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Clients Section -->
+
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Services</h2>
+        <p>How Groovin Creates Business Growth</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6 icon-box">
+          <div class="icon"><i class="icofont-computer"></i></div>
+          <h4 class="title"><a href="">SEO Services:Earning traffic</a></h4>
+          <p class="description">A website without traffic is worthless, but a website with the right traffic consistently flowing can propel a business to new heights. Our marketers partner with you to identify your target market and get to work
+            making your site more visible to your key market through our comprehensive digital marketing services.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 icon-box">
+          <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
+          <h4 class="title"><a href="">PPC Management Services:Measurable Advertising</a></h4>
+          <p class="description">The right advertising campaign can be the secret sauce to a business's success. By focusing on ROI from the starting line, our marketing team crafts PPC, display, geotargeted, and remarketing campaigns engineered
+            for success. Experience results from digital advertising that have a tangible impact on the bottom line.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 icon-box">
+          <div class="icon"><i class="icofont-earth"></i></div>
+          <h4 class="title"><a href="">Website Redesign Services:Design that dazzles</a></h4>
+          <p class="description">Your business is unique and you need a website that can help separate you from the competition. By focusing on the latest web standards while maintaining a keen eye for conversion-based design, the WebFX interactive
+            team lays the creative groundwork for your digital presence with a cutting-edge website design.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 icon-box">
+          <div class="icon"><i class="icofont-image"></i></div>
+          <h4 class="title"><a href="">Social Media Services:Expand your social reach</a></h4>
+          <p class="description">Connectivity and online interaction are a must for any company focused on growth. Our team of social media experts can create and execute a social media management plan that gets the right message in front of your
+            desired audience. Let us help you sort out what platforms, posts, and hashtags will help you grow.</p>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Services Section -->
+
+  <!-- ======= Why Us Section ======= -->
+  <section id="why-us" class="why-us">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Why Us</h2>
+        <h3>By the numbers</h3>
+        <p>
+          Our best-in-class digital marketing services impress customers with impactful results and wow them with stellar customer service.
+        </p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4">
+          <div class="box">
+            <span>01</span>
+            <h4>91% Retention Rate</h4>
+            <p>Your business is in good hands at WebFX. While the average retention rate for marketing agencies hovers around 50%, over 90% of our clients stay with us over the long haul because of the results we deliver and the relationships we
+              build.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="box">
+            <span>02</span>
+            <h4>23% Average Traffic Increase</h4>
+            <p>We pride ourselves on driving growth for established businesses using industry-leading digital marketing strategies. Our client base experiences meaningful and sustainable levels of traffic growth.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="box">
+            <span>03</span>
+            <h4> 11,000+ Books Read By WebFX Team</h4>
+            <p>Digital marketing is a fast-moving industry and our team takes pride in staying ahead of the curve by keeping up to date with the latest tactics and trends. We've written over 5,000 blog posts on the latest and greatest in digital.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Why Us Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>Work Speaks more than Words.</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <ul id="portfolio-flters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-card">Card</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row portfolio-container">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 1</h4>
+              <p>App</p>
+              <div class="portfolio-links">
+                <a href="img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <div class="portfolio-links">
+                <a href="img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 2</h4>
+              <p>App</p>
+              <div class="portfolio-links">
+                <a href="img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 2</h4>
+              <p>Card</p>
+              <div class="portfolio-links">
+                <a href="img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 2</h4>
+              <p>Web</p>
+              <div class="portfolio-links">
+                <a href="img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>App 3</h4>
+              <p>App</p>
+              <div class="portfolio-links">
+                <a href="img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 1</h4>
+              <p>Card</p>
+              <div class="portfolio-links">
+                <a href="img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Card 3</h4>
+              <p>Card</p>
+              <div class="portfolio-links">
+                <a href="img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <h4>Web 3</h4>
+              <p>Web</p>
+              <div class="portfolio-links">
+                <a href="img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Portfolio Section -->
+
+  <!-- ======= Team Section ======= -->
+  <section id="team" class="team">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Team</h2>
+        <p>Our Building Blocks.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="member">
+            <img src="img/team/team-1.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+          <div class="member">
+            <img src="img/team/team-2.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
+          <div class="member">
+            <img src="img/team/team-3.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
+          <div class="member">
+            <img src="img/team/team-4.jpg" class="img-fluid" alt="">
+            <div class="member-info">
+              <div class="member-info-content">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Team Section -->
+
+  <!-- ======= Pricing Section ======= -->
+  <section id="pricing" class="pricing">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Pricing</h2>
+        <p>Grow Your Business at Amazing Prices.</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="box">
+            <form action="/pay" method="post">
+            <h3>Free</h3>
+            <h4><sup>$</sup>0<span> / month</span></h4>
+            <ul>
+              <li>Web Desgin</li>
+              <li>Graphic Design</li>
+              <li class="na">Social Media Marketing</li>
+              <li class="na">SEO</li>
+              <li class="na">Product Management</li>
+            </ul>
+             <input type="hidden" name="price" value="1">
+             <input type="hidden" name="pack" value="Starter pack">
+
+             <div class="btn-wrap">
+                  <input class="btn-buy" type="submit" value="Buy Now">
+                  </div>
+                </form>
+            </div>
+          </div>
+
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+          <div class="box recommended">
+            <h3>Business</h3>
+            <h4><sup>$</sup>19<span> / month</span></h4>
+            <ul>
+              <li>Web Desgin</li>
+              <li>Graphic Design</li>
+              <li>Social Media Marketing</li>
+              <li>SEO</li>
+              <li class="na">Product Management</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+          <div class="box">
+            <h3>Developer</h3>
+            <h4><sup>$</sup>25<span> / month</span></h4>
+            <ul>
+              <li>Web Desgin</li>
+              <li>Graphic Design</li>
+              <li>Social Media Marketing</li>
+              <li>SEO</li>
+              <li>Product Management</li>
+            </ul>
+            <div class="btn-wrap">
+              <a href="#" class="btn-buy">Buy Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Pricing Section -->
+
+  <!-- ======= Frequently Asked Questions Section ======= -->
+  <!-- <section id="faq" class="faq section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi
+          quidem hic quas.</p>
+      </div>
+
+      <div class="faq-list">
+        <ul>
+          <li data-aos="fade-up">
+            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i
+                class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+              <p>
+                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="100">
+            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i
+                class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+              <p>
+                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+                Mauris ultrices eros in cursus turpis massa tincidunt dui.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="200">
+            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i
+                class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+              <p>
+                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis
+                convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="300">
+            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i
+                class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+              <p>
+                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis
+                cursus in.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="400">
+            <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i
+                class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+            <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+              <p>
+                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu
+                scelerisque.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+  </section>
+   End Frequently Asked Questions Section -->
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>Feel Free to contact us anytime. We will always be there for you.</p>
+      </div>
+
+      <div class="row contact-info">
+
+        <div class="col-md-4">
+          <div class="contact-address">
+            <i class="icofont-google-map"></i>
+            <h3>Address</h3>
+            <address>A108 Adam Street, NY 535022, USA</address>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-phone">
+            <i class="icofont-phone"></i>
+            <h3>Phone Number</h3>
+            <p><a href="tel:+155895548855">+1 5589 55488 55</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-email">
+            <i class="icofont-envelope"></i>
+            <h3>Email</h3>
+            <p><a href="mailto:info@example.com">info@example.com</a></p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="form">
+        <form action="/contact" method="post" role="form" class="php-email-form" id="myForm" onsubmit="return false">
+          <div class="form-row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <div class="validate"></div>
+            </div>
+            <div class="col-md-6 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+              <div class="validate"></div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="text-center"><input type="button" onclick="myFunction()" value="Send" /> </div>
+        </form>
+        <script>
+          function myFunction() {
+            document.getElementById("myForm").submit();
+            alert("We have recieved your message, we will be in touch soon!");
+           document.getElementById("myForm").reset();
+          }
+        </script>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+
+<%- include("footer") -%>
